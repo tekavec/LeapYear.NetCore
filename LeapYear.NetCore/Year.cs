@@ -13,7 +13,20 @@ namespace LeapYear.NetCore
 
         public bool IsLeapYear()
         {
-            return (value % 4 == 0);
+            if (value % 4 == 0)
+            {
+                if (value % 100 == 0)
+                {
+                    if (value % 400 == 0)
+                        return true;
+                    else
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
         }
     }
 }

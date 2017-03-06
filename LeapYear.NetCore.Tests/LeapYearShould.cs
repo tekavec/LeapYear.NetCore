@@ -8,6 +8,8 @@ namespace LeapYear.NetCore.Tests
         [Theory]
         [InlineData(1996, true)]
         [InlineData(1997, false)]
+        [InlineData(1900, false)]
+        [InlineData(1600, true)]
         public void be_a_leap_year_if_divisible_by_4(int value, bool expected)
         {
             var year = new Year(value);
