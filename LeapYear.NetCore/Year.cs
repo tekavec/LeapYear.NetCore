@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeapYear.NetCore
+﻿namespace LeapYear.NetCore
 {
     public class Year
     {
